@@ -1,10 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Raleway:wght@300;400&family=Roboto+Condensed&family=Roboto+Mono:wght@500&display=swap%27');
 
+:root {
+	--celeste: #AEFEFF;
+	--metallic: #35858B;
+	--prussianBlue: #04293A;
+	--oxfordBlue: #041C32;
+}
+
 
 html,
 body {
 	height: 100%;
 	font-family: 'Roboto Mono', monospace;
+}
+
+.title-home{
+	font-family: 'Oxygen', sans-serif;
+	font-size: 120px;
+	color: var(--celeste);
+}
+
+.home{
+	background-color: var(--oxfordBlue);
 }
 
 img {
@@ -13,9 +30,13 @@ img {
 
 p {
 	font-size: 15px;
-	color: #6c6e7e;
 	line-height: 30px;
 	font-family: "Roboto", sans-serif;
+}
+
+.slogan{
+	color: white;
+	font-family: 'Raleway', sans-serif;
 }
 
 a:hover,
