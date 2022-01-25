@@ -35,7 +35,7 @@ html {
 }
 
 .navbar img{
-  width: 10%;
+  width: 5%;
 }
 
 
@@ -60,16 +60,17 @@ lottie-player {
   margin: 0 auto;
 }
 
+
 /* ----- Home Classes ----- */
 .tittle-home {
   color: rgb(128, 255, 219);
   font-family: 'Oxygen', sans-serif;
 }
-#home.lead {
+.leadHome {
   font-family: 'Raleway', sans-serif;
-  color: white;
   margin-bottom: 5%;
 }
+
 #particles-js {
   position: absolute;
   background-color: rgb(0, 0, 0);
@@ -93,7 +94,6 @@ lottie-player {
   margin: 0;
 }
 .panel {
-  display: block;
   font-size: 100%;
   position: absolute;
   z-index: 10;
@@ -109,4 +109,66 @@ lottie-player {
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+}
+
+#Planes{
+  background-image: url("../assets/img/fondoConocenos.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#Conocenos{
+  background-color: var(--oxfordBlue);
+  color: white;
+}
+
+#Conocenos img{
+  width: 20%;
+}
+
+.card{
+  background-color: #ffffff00;
+  border: 0;
+}
+
+.card-title{
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card-text{
+  font-family: 'Raleway', sans-serif;
+}
+
+.us-link{
+  text-decoration: none;
+  color: white;
+}
+
+.us-link:hover{
+  color: var(--celeste);
+}
+
+.panelHidden{
+  display:none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .panel{
+    text-align: center;
+  }
+
+  .panelHidden{
+    display: inherit;
+  }
+
+  .visible{
+    display: none;
+  }
+
+
+.navbar img{
+  width: 15%;
+}
+
 }

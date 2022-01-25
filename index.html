@@ -1,147 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- ----- JQuery ----- -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- ----- AOS ----- -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>Creep-ToMonedas | Foro de Criptomonedas</title>
-  </head>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="./css/style.css" />
+	<!-- ----- JQuery ----- -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<!-- ----- AOS ----- -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
 
-  <!--Inspiration:
+	<title>Creep-ToMonedas | Foro de Criptomonedas</title>
+</head>
+
+<!--Inspiration:
     https://bitcoin.org/en/
 -->
 
-  <body>
-    <!-- ----- NavBar ----- -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-      <div class="container-fluid">
-        <img src="./assets/img/logo.png" alt="Logo">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span
-            class="navbar-toggler-icon d-flex justify-content-start align-items-center"
-          >
-            <i class="bi bi-three-dots" style="color: rgb(128, 255, 219)"></i>
-          </span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html"
-                >Contacto</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html"
-                >Servicios</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
+	<!-- ----- NavBar ----- -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="container-fluid">
+			<img src="./assets/img/logo.png" alt="Logo">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+					<i class="bi bi-three-dots" style="color: rgb(128, 255, 219)"></i>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="services.html">Servicios</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-    <!-- ----- Home ----- -->
-    <div class="min-vh-100 m-0" id="Home">
-      <div class="panel text-center justify-content-center container-fluid">
-        <h1 class="tittle-home display-1">Creep-ToMonedas</h1>
-        <p class="lead display-6">Foro por y para traders</p>
-      </div>
-      <!-- particles.js container -->
-      <div
-        class="mb-0"
-        id="particles-js"
-        style="background-color: #041c32"
-      ></div>
-    </div>
+	<!-- ----- Home ----- -->
+	<div class="min-vh-100 m-0" id="Home">
+		<div class="panel justify-content-center container-fluid">
+			<h1 class="tittle-home display-1 panelHidden">Creep-ToMonedas</h1>
+			<p class="leadHome display-6 panelHidden">Foro dedicado a criptomonedas</p>
+			<div class="row visible">
+				<div class="col-sm">
+					<h1 class="tittle-home display-1">Creep-ToMonedas</h1>
+					<p class="leadHome display-6 disabled">Foro dedicado a criptomonedas</p>
+				</div>
+				<div class="col-sm">
+					<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+					<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_6q3x8d8e.json"
+						background="transparent" speed="1" style="width: 400px; height: 400px;" loop autoplay>
+					</lottie-player>
+				</div>
+			</div>
+		</div>
 
-    <section
-      class="min-vh-100 container-fluid justify-content-center"
-      id="About"
-    >
-      <div class="row mt-3">
-        <div class="col-12 p-0">
-          <div class="jumbotron d-flex flex-column">
-            <h2 class="tittle-sections display-4 mt-4 text-center" data-aos="fade-up">
-              Acerca De Nosotros
-            </h2>
-            <!---->
-            <div class="container ml-1" data-aos="fade-up">
-              <div class="row">
-                <div class="col-sm">
-                  <p class="text-sections pt-5 container-fluid h3">
-                    I am a student of Computer Engineering, FullStack Java
-                    Developer and Cyber-Security Enthusiast from Mexico City,
-                    Mexico. Self-taught. I have 3 years of experience in code
-                    development, working on projects with
-                    <a
-                      href="https://mexico.generation.org/"
-                      class="link-to-page"
-                      target="__BLANK"
-                      ><i>Generation</i></a
-                    >. <br /><br />
-                    From time to time I like to release open source projects to
-                    help the wider web development community.
-                  </p>
-                </div>
-                <div class="col-sm">
-				  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_2omr5gpu.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop  autoplay></lottie-player>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<!-- particles.js container -->
+		<div class="mb-0" id="particles-js" style="background-color: #041c32"></div>
+	</div>
 
-    <!-- ---- Script Red ---- -->
-    <script src="./js/particles.min.js"></script>
-    <!-- ----- Personalizados ------->
-    <script src="./js/redesHome.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/animateTyping.js"></script>
-    <!-- ----- Bootstrap ----- -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <!-- ----- AOS Scripts ----- -->
-    <script>
-      AOS.init();
-    </script>
-  </body>
+	<section class="min-vh-100 container-fluid justify-content-center" id="About">
+		<div class="row mt-3">
+			<div class="col-12 p-0">
+				<div class="jumbotron d-flex flex-column">
+					<h2 class="tittle-sections display-4 mt-4 text-center p-1" data-aos="fade-up">
+						Acerca De Nosotros
+					</h2>
+					<!---->
+					<div class="container ml-1" data-aos="fade-up">
+						<p class="text-sections pt-5 container-fluid h4 panelHidden">
+							<i>Creep-ToMonedas</i> es un proyecto que busca brindar información sobre el mundo de las
+							criptomonedas, enfocado especificamente en el mercado mexicano. <br> <br>
+							Pensamos en la necesidad de crear una comunidad donde podamos sentirnos en confianza de
+							preguntar y responder sobre el tema que tanto nos apasiona, las criptomonedas. <br><br>
+							Creemos que tomar una decisión es sumamente importante, por lo que buscamos brindar
+							información veraz y actualizada. <br><br>
+							¡Unete a Creep-to y se parte de la familia!
+						</p>
+						<div class="row visible">
+							<div class="col-sm">
+								<p class="text-sections pt-5 container-fluid h4">
+									<i>Creep-ToMonedas</i> es un proyecto que busca brindar información sobre el mundo
+									de las criptomonedas, enfocado especificamente en el mercado mexicano. <br> <br>
+									Pensamos en la necesidad de crear una comunidad donde podamos sentirnos en confianza
+									de preguntar y responder sobre el tema que tanto nos apasiona, las criptomonedas.
+									<br><br>
+									Creemos que tomar una decisión es sumamente importante, por lo que buscamos brindar
+									información veraz y actualizada. <br><br>
+									¡Unete a Creep-to y se parte de la familia!
+								</p>
+							</div>
+							<div class="col-sm">
+								<script
+									src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+								<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_2omr5gpu.json"
+									background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay>
+								</lottie-player>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="min-vh-100 container-fluid justify-content-center mb-0" id="Planes">
+		<div class="row mt-3">
+			<div class="col-12 p-0">
+				<div class="jumbotron d-flex flex-column">
+					<h2 class="tittle-sections display-4 mt-4 text-center" data-aos="fade-up">
+						Planes
+					</h2>
+					<!---->
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="min-vh-100 container-fluid justify-content-center" id="Conocenos">
+		<div class="row">
+			<div class="col-12 p-0">
+				<div class="jumbotron d-flex flex-column">
+					<h2 class="tittle-sections display-4 mt-4 text-center" data-aos="fade-up">
+						Conoce Al Equipo
+					</h2>
+					<!---->
+					<div class="container-fluid mt-2" data-aos="fade-up">
+						<div class="card-group">
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Zxtsv</h5>
+									<p class="card-text">
+										FullStack Developer
+									</p>
+									<p class="card-text text-center"><small class="text-muted">
+										<a class="us-link" href="https://github.com/Zxtsv" target="__blank">
+											<i class="bi bi-github"></i> Github
+										</a>
+									</small></p>
+								</div>
+							</div>
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-group">
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-group">
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-group">
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+							<div class="card align-items-center">
+								<img class="card-img-top" src="./assets/img/perfil.png" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title text-center">Integrante</h5>
+									<p class="card-text">This is a wider card with supporting text below as a
+										natural
+										lead-in to additional content. This content is a little bit longer.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ---- Script Red ---- -->
+	<script src="./js/particles.min.js"></script>
+	<!-- ----- Personalizados ------->
+	<script src="./js/redesHome.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/animateTyping.js"></script>
+	<!-- ----- Bootstrap ----- -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+	<!-- ----- AOS Scripts ----- -->
+	<script>
+		AOS.init();
+	</script>
+</body>
+
 </html>
