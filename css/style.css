@@ -172,3 +172,29 @@ lottie-player {
 }
 
 }
+
+#footer{
+
+  background-color: #AEFEFF;
+  font-family: 'Oxygen', sans-serif;
+}
+#icon{
+  color: #041C32;
+}
+
+#logo-foot{
+  text-align: center;
+  color: #041C32;
+}
+
+#lists{
+  
+  color: #041C32;
+}
+a {
+  color: #041C32;
+  text-decoration: none;
+}
+a:hover{
+  color: #35858B;
+}
