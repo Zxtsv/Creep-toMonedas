@@ -173,6 +173,7 @@ lottie-player {
 
 }
 
+<<<<<<< HEAD
 #footer{
 
   background-color: #AEFEFF;
@@ -198,3 +199,25 @@ a {
 a:hover{
   color: #35858B;
 }
+=======
+#team-image{
+  width: 100%;
+  display: block; margin: auto;
+  }
+  .perfiles{
+      width: 250px;
+      display: block; margin: auto;
+      border-radius: 100%;
+      cursor: pointer;
+      transition: all 100ms ease;
+  }
+  .perfiles:hover{
+      box-shadow: 5px 1px 10px rgba(0,0,0,0.1);
+      transform: translateY(-10%);
+  }
+
+  p{
+    text-align: center;
+    justify-content: center;
+  }
+>>>>>>> 38e01160b361eda60fc3f22c8bb252c510a74cad
