@@ -36,7 +36,7 @@
         </div>
 
         <div class="input-box">
-          <input type="submit" value="Enviar Mensaje" onclick="enviarEmail()">
+          <input type="submit" id="crear" value="Enviar Mensaje" onclick="enviarEmail()">
         </div>
       </form>
     </div>
@@ -52,6 +52,15 @@
       url+=body; // Concatenando la url y el body
       window.open(url);
     }
+  </script>
+  <script>
+        document.getElementById("crear").addEventListener("click", crear);
+
+        function crear(){
+            sessionStorage.setItem("nombre",document.getElementById("name").value);
+            sessionStorage.setItem("mail",document.getElementById("mail").value);
+            sessionStorage.setItem("phone",document.getElementById("phone").value);
+        };
   </script>
 </body>
 
