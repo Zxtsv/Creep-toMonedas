@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Contacto</title>
-    <link rel="stylesheet" href="/css/contacto.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+
+<head>
+  <meta charset="UTF-8">
+  <title> Contacto</title>
+  <link rel="stylesheet" href="/css/contacto.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+</head>
+
 <body>
   <div class="container">
     <div class="content">
@@ -24,7 +27,7 @@
         <label>Correo electrónico</label>
       </div>
       <div class="input-box">
-        <input type="text" required>
+        <input type="text" name="phone" required>
         <label>Teléfono </label>
       </div>
       <div class="message-box">
@@ -53,7 +56,14 @@
     }).then(
       message => alert(message)
     );
+    crear();
     }
+    function crear(){
+              sessionStorage.setItem("nombre",document.querySelector('form').elements["firstName"].value);
+              sessionStorage.setItem("mail",document.querySelector('form').elements["email"].value);
+              sessionStorage.setItem("phone",document.querySelector('form').elements["phone"].value);
+          }
   </script>
 </body>
+
 </html>
