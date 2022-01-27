@@ -13,14 +13,14 @@
       <div class="image-box">
         <img src="./assets/img/ajolote.png" alt="">
       </div>
-    <form action="#">
+    <form action="#" onsubmit="return false">
       <div class="topic">Contáctanos</div>
       <div class="input-box">
-        <input type="text" required>
+        <input type="text" name="firstName" required>
         <label>Nombre</label>
       </div>
       <div class="input-box">
-        <input type="text" required>
+        <input type="text" name="email" required>
         <label>Correo electrónico</label>
       </div>
       <div class="input-box">
@@ -28,16 +28,32 @@
         <label>Teléfono </label>
       </div>
       <div class="message-box">
-        <textarea></textarea>
+        <textarea name="message"></textarea>
         <label>Mensaje </label>
       </div>
       
       <div class="input-box">
-        <input type="submit" value="Enviar Mensaje">
+        <input type="submit" value="Enviar Mensaje" onclick="sendEmail()">
       </div>
     </form>
   </div>
   </div>
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(){
+          Email.send({
+            Host : "smtp.mailtrap.io",
+            Username : "490439c788be8f",
+            Password : "12c3eb7f8e54fd",
+            To : 'creep2monedas@gmail.com',
+            From :document.querySelector('form').elements["email"].value,
+            Subject :document.querySelector('form').elements["firstName"].value,
+            Body :document.querySelector('form').elements["message"].value
+    }).then(
+      message => alert(message)
+    );
+    }
+  </script>
 </body>
 </html>
