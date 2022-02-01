@@ -123,7 +123,8 @@ lottie-player {
 }
 
 #Conocenos img{
-  width: 20%;
+  object-fit: cover;
+  width: auto;
 }
 
 .card{
