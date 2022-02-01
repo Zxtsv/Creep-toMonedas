@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 *{
   margin: 0;
@@ -5,15 +6,21 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+
+.nav-item {
+  font-size: 1.5em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
 body{
   height: 100vh;
   width: 100%;
-  display: flex;
+  display: contents;
   align-items: center;
   justify-content: center;
   background: #fff;
   position: relative;
 }
+/*
 body::before{
   content: '';
   position: absolute;
@@ -23,10 +30,10 @@ body::before{
   top: 0;
   background: #35858B;
   clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
-}
+}*/
 .container{
   z-index: 12;
-  max-width: 1050px;
+  max-width: 200px;
   width: 100%;
   background: #fff;
   border-radius: 12px;
@@ -144,7 +151,7 @@ body::before{
 .content .input-box input[type="submit"]:hover{
   background-color: #04293A;
 }
-@media (max-width:1000px) {
+@media (max-width:600px) {
   .content .image-box{
     max-width: 70%;
   }
@@ -152,7 +159,7 @@ body::before{
     padding: 10px 0;
   }
 }
-@media (max-width:900px) {
+@media (max-width:600px) {
   .content .image-box{
     display: none;
   }
