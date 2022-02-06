@@ -7,3 +7,5 @@ $(window).on("scroll", function() {
           $('nav').removeClass('navbar-scrolled');
     }
 });
+
+ScrollReveal().reveal('.dashboard-foro', { delay: 20 });
