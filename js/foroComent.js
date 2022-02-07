@@ -7,3 +7,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     modal.find('.modal-title').text('Nueva entrada')
     modal.find('.modal-body input').val(recipient)
 })
+
+// Evento que envia cada pulsacion de tecla a la nueva ventana
+document.getElementById("enviar").addEventListener("keyup",(e)=>{
+ 
+    // Enviamos el texto a la nueva ventana
+    document.getElementById("texto").innerHTML=e.currentTarget.value;
+});
