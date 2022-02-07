@@ -1,0 +1,11 @@
+.card{
+    padding: auto;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary{
+    padding: auto;
+    margin: auto;
+}
