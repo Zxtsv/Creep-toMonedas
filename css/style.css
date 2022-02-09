@@ -37,6 +37,9 @@ html {
 .navbar img{
   width: 5%;
 }
+nav{
+  z-index: 100;
+}
 
 
 /* ----- General Classes -----*/
@@ -154,7 +157,6 @@ lottie-player {
 }
 
 @media only screen and (max-width: 600px) {
-
   .panel{
     text-align: center;
   }
@@ -272,3 +274,7 @@ a:hover{
     letter-spacing: .1rem;
     align-self: flex-end;
   }
+  
+.btn-redondeado{
+  border-radius: 30px;
+}
