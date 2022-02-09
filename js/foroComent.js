@@ -16,7 +16,8 @@ function enviars() {
     // usaremos join para unir los arrays y unshif para agregar el primer elemento arriba
 
     let title = "<h3>";
-    title += document.getElementById("comment-title").value + "</h3>"; // Extrae el valor del titulo
+    let category = selectCategory();
+    title += document.getElementById("comment-title").value + category + "</h3>"; // Extrae el valor del titulo
     let doubt = "<p>";
     doubt += document.getElementById("message-text").value + "</p>"; // Extrae el valor de la duda
 
@@ -37,3 +38,27 @@ function enviars() {
 function alerta() {
     Swal.fire('Tu publicación se ha publicado correctamente');
 }
+
+
+// Bloque de código categoria
+function selectCategory(){
+    let selection = document.getElementById("exampleFormControlSelect1");
+    let boton = "";
+    switch (selection.selectedIndex) {
+        case 0:
+            boton = "<button type='button' class='btn btn-success ms-4 btn-redondeado' id='bttn-categoria'>"+ selection.options[selection.selectedIndex].value +"</button>";
+            break;
+        case 1:
+            boton = "<button type='button' class='btn btn-info ms-4 btn-redondeado' id='bttn-categoria'>"+ selection.options[selection.selectedIndex].value +"</button>";
+            break;
+        case 2:
+            boton = "<button type='button' class='btn btn-dark ms-4 btn-redondeado' id='bttn-categoria'>"+ selection.options[selection.selectedIndex].value +"</button>";
+            break;
+        default:
+            boton = "";
+            break;
+    }
+
+    return boton;
+}
+
