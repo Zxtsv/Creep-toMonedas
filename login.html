@@ -1,54 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/ajolote1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ----- JQuery ----- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <title>Creepto-Login</title>
 </head>
+
 <body>
-        <div class="page">
-            <div class="container">
-              <div class="left">
-                <div class="login">Login</div>
-                <div class="eula">By logging in you agree to the ridiculously long terms that you didn't bother to read</div>
-              </div>
-              <div class="right">
+    <nav class="navbar navbar-expand-lg p-1">
+        <div class="container-fluid">
+            <img class="me-4 " src="./assets/img/ajolote1.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+                    <i class="bi bi-three-dots" style="color: rgb(128, 255, 219)"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#Planes">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/foro.html">Foro</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-light btn-redondeado" type="submit">
+                        Registro
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        <div class="container">
+            <div class="left">
+                <div class="login">Creep-toLogin</div>
+                <div class="eula">Ingresa a tu cuenta de Creep-toMonedas e ingresa a la comunidad!</div>
+            </div>
+            <div class="right">
                 <svg viewBox="0 0 320 300">
-                  <defs>
-                    <linearGradient
-                                    inkscape:collect="always"
-                                    id="linearGradient"
-                                    x1="13"
-                                    y1="193.49992"
-                                    x2="307"
-                                    y2="193.49992"
-                                    gradientUnits="userSpaceOnUse">
-                      <stop
-                            style="stop-color:#ff00ff;"
-                            offset="0"
-                            id="stop876" />
-                      <stop
-                            style="stop-color:#ff0000;"
-                            offset="1"
-                            id="stop878" />
-                    </linearGradient>
-                  </defs>
-                  <path d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
+                    <defs>
+                        <linearGradient inkscape:collect="always" id="linearGradient" x1="13" y1="193.49992" x2="307"
+                            y2="193.49992" gradientUnits="userSpaceOnUse">
+                            <stop style="stop-color:#04293a;" offset="0" id="stop876" />
+                            <stop style="stop-color:#35858b;" offset="1" id="stop878" />
+                        </linearGradient>
+                    </defs>
+                    <path
+                        d="m 40,120.00016 239.99984,-3.2e-4 c 0,0 24.99263,0.79932 25.00016,35.00016 0.008,34.20084 -25.00016,35 -25.00016,35 h -239.99984 c 0,-0.0205 -25,4.01348 -25,38.5 0,34.48652 25,38.5 25,38.5 h 215 c 0,0 20,-0.99604 20,-25 0,-24.00396 -20,-25 -20,-25 h -190 c 0,0 -20,1.71033 -20,25 0,24.00396 20,25 20,25 h 168.57143" />
                 </svg>
                 <div class="form">
-                  <label for="email">Email</label>
-                  <input type="email" id="email">
-                  <label for="password">Password</label>
-                  <input type="password" id="password">
-                  <input type="submit" id="submit" value="Submit">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                    <input class="w-50" type="submit" id="submit" value="Login">
                 </div>
-              </div>
             </div>
-          </div>          
+        </div>
+    </div>
 
     <script src="./js/login.js"></script>
+    <!-- ----- Bootstrap ----- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+        <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 </body>
+
 </html>
