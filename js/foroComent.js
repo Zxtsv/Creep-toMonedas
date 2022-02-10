@@ -11,6 +11,9 @@ $("#exampleModal").on("show.bs.modal", function (event) {
 document.getElementById("Benviar").addEventListener("click", enviars);
 
 var posts = [];
+var postsBlockchain = [];
+var postsCripto = [];
+var postsWallets = [];
 
 function enviars() {
     // usaremos join para unir los arrays y unshif para agregar el primer elemento arriba
@@ -29,7 +32,6 @@ function enviars() {
         "</div><hr></div></div>";
 
     posts.unshift(post);
-
     let result = posts.join("");
     document.getElementById("section-publication").innerHTML = result;
     alerta();
@@ -39,8 +41,6 @@ function alerta() {
     Swal.fire('Tu publicación se ha publicado correctamente');
 }
 
-
-// Bloque de código categoria
 function selectCategory(){
     let selection = document.getElementById("exampleFormControlSelect1");
     let boton = "";
@@ -61,4 +61,3 @@ function selectCategory(){
 
     return boton;
 }
-
