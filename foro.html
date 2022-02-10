@@ -48,23 +48,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="/index.html#Planes">Servicios</a>
 						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false">
-								Categorias
-							</a>
-							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<li><a class="dropdown-item" href="#">Blockchain</a></li>
-								<li><a class="dropdown-item" href="#">Criptomonedas</a></li>
-								<li><a class="dropdown-item" href="#">Wallets</a></li>
-								<li>
-									<hr class="dropdown-divider" />
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">Preguntas frecuentes</a>
-								</li>
-							</ul>
-						</li>
+
 					</ul>
 					<form class="d-flex">
 						<div class="input-group me-4">
@@ -84,6 +68,7 @@
 		</nav>
 	</header>
 
+	<!-- === PARTE DEL HOME ==== -->
 	<div class="dashboard-foro m-0 text-center" id="Home">
 		<div class="justify-content-center container-fluid">
 			<div class="row">
@@ -111,82 +96,100 @@
 		</div>
 	</div>
 
+	<!-- === PARTE FORO ==== -->
 	<!-----Crear comentario------>
-	<br>
-	<input type="button" onclick="abrir()" value="Escribe tu pregunta" class="btn btn-primary" data-toggle="modal"
-		data-target="#exampleModal" data-whatever="@getbootstrap"></input>
+	<div class="container mt-3 min-vh-100">
+		<div class="row">
+			<div class="col-8 m-0">
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Nuevo comentario</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form>
-						<!--<div class="form-group">
-				<label for="recipient-name" class="col-form-label">Recipient:</label>
-				<input type="text" class="form-control" id="recipient-name">
-			</div>-->
-						<div class="form-group">
-							<label for="message-text" class="col-form-label">Escribe el título de tu pregunta</label>
-							<textarea class="form-control" id="comment-title"></textarea>
-							<label for="message-text" class="col-form-label">Escribe tu duda:</label>
-							<textarea class="form-control" id="message-text"></textarea>
-						</div>
+				<!-- === LADO IZQUIERDO === -->
+				<input type="button" onclick="abrir()" value="Escribe tu pregunta" class="btn btn-primary"
+					data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap"></input>
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Nuevo comentario</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<!--<div class="form-group">
+			<label for="recipient-name" class="col-form-label">Recipient:</label>
+			<input type="text" class="form-control" id="recipient-name">
+		</div>-->
+									<div class="form-group">
+										<label for="message-text" class="col-form-label">Escribe el título de tu
+											pregunta</label>
+										<textarea class="form-control" id="comment-title"></textarea>
+										<label for="message-text" class="col-form-label">Escribe tu duda:</label>
+										<textarea class="form-control" id="message-text"></textarea>
+									</div>
 
-						<div class="form-group">
-							<label for="exampleFormControlSelect1">Selecciona la categoria</label>
-							<select class="form-control" id="exampleFormControlSelect1" onchange="selectCategory()">
-								<option value="Blockchain">Blockchain</option>
-								<option value="Criptomonedas">Criptomonedas</option>
-								<option value="Wallets">Wallets</option>
-							</select>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<input type="button" onclick="cerrar()" value="Close" class="btn btn-secondary"
-						data-dismiss="modal"></inpubutton>
-					<input type="button" id="Benviar" onclick="send()" value="Enviar" class="btn btn-primary"></input>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--------Filtro-------->
-	
-	<div class="container-fluid">
-		<div class="categori-part">
-			<br>
-			<h4>Filtrar por Categorías</h4>
-			<ul>
-				<li><a id="bttn-categorias" value=0>Blockchain</a></li>
-				<li><a id="bttn-categorias" value=1>Criptomonedas</a></li>
-				<li><a id="bttn-categorias" value=2>Wallets</a></li>
-			</ul>
-		</div>
-	</div>
-
-
-	<!-- === Apartadado de posts === -->
-	<section class="main-content920">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<section class="category2781">
-						<div class="question-type2033">
-							<div class="row" id="section-publication">
-								
+									<div class="form-group">
+										<label for="exampleFormControlSelect1">Selecciona la categoria</label>
+										<select class="form-control" id="exampleFormControlSelect1"
+											onchange="selectCategory()">
+											<option value="Blockchain">Blockchain</option>
+											<option value="Criptomonedas">Criptomonedas</option>
+											<option value="Wallets">Wallets</option>
+										</select>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<input type="button" onclick="cerrar()" value="Close" class="btn btn-secondary"
+									data-dismiss="modal"></inpubutton>
+								<input type="button" id="Benviar" onclick="send()" value="Enviar"
+									class="btn btn-primary"></input>
 							</div>
 						</div>
-					</section>
+					</div>
+				</div>
+				<!-- === Apartadado de posts === -->
+				<section class="main-content920">
+					<div class="container">
+						<div class="row m-0 w-100">
+							<div class="col-md-9 m-0 p-0 w-100">
+								<section class="category2781 m-0 p-0 w-100">
+									<div class="question-type2033 m-0 p-0 w-100">
+										<div class="row mt-3 p-0" id="section-publication">
+
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-4 m-0">
+				<!-- === LADO DERECHO ===-->
+				<!--------Filtro-------->
+
+				<div class="container-fluid">
+					<div class="categori-part">
+						<br>
+						<h4>Filtrar por Categorías</h4>
+						<ul>
+							<li><button type="button" class="btn btn-dark btn-redondeado" id="bttn-categorias"
+									onclick="innerCategory(0)">Blockchain</button></li>
+							<li><button type="button" class="btn btn-dark btn-redondeado" id="bttn-categorias"
+									onclick="innerCategory(1)">Criptomonedas</button></li>
+							<li><button type="button" class="btn btn-dark btn-redondeado" id="bttn-categorias"
+									onclick="innerCategory(2)">Wallet</button></li>
+							<li><button type="button" class="btn btn-dark btn-redondeado" id="bttn-categorias"
+									onclick="innerCategory(3)">Todos los posts</button></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+
 
 
 
