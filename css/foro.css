@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Raleway:wght@300;400&family=Roboto+Condensed&family=Roboto+Mono:wght@500&display=swap");
+
+:root {
+  --celeste: #aefeff;
+  --metallic: #35858b;
+  --prussianBlue: #04293a;
+  --oxfordBlue: #041c32;
+}
+.barra-busqueda {
+  border-radius: 20px;
+  background-color: transparent;
+  color: white;
+}
+.barra-busqueda:hover {
+  background-color: transparent;
+  color: white;
+}
+.lupa {
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+}
+.btn-redondeado{
+    border-radius: 30px;
+}
+.btn-light:hover{
+  background-color: gainsboro;
+}
+.btn-outline-light:hover{
+  background-color: transparent;
+  color: gainsboro;
+  border-color: gainsboro;
+}
+.input-group {
+  border: 0;
+}
+nav {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.nav-item {
+  font-size: 1.4em;
+}
+.navbar,
+.dropdown-menu {
+  background-color: var(--oxfordBlue);
+}
+.dropdown-item {
+  color: white;
+}
+.dropdown-item:hover,
+.dropdown-divider {
+  background-color: var(--celeste);
+}
+.dashboard-foro{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url("https://images.unsplash.com/photo-1622790698141-94e30457ef12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.title-dashboard{
+    color: var(--celeste);
+    font-family: 'Oxygen', sans-serif;
+}
+.leadForo{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.lead-letras-pequenas{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+}
+#Descripcion-lead{
+  font-size: 1.5em;
+}
+.tittle-subtitle-footer{
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .input-group {
+    display: none;
+  }
+  .d-flex {
+    margin-bottom: 5%;
+  }
+}
