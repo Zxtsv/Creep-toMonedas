@@ -10,23 +10,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 
 <body>
-<!-- ----- NavBar ----- -->
-	<nav class="navbar navbar-expand-lg fixed-top">
-		<div class="container-fluid">
-			<img src="./assets/img/ajolote1.png" alt="Logo">
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
-					<i class="bi bi-three-dots" style="color: rgb(128, 255, 219)"></i>
-				</span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
+  <!-- ----- NavBar ----- -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <img src="./assets/img/ajolote1.png" alt="Logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
+          <i class="bi bi-three-dots" style="color: rgb(128, 255, 219)"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
@@ -38,13 +38,21 @@
 					<li class="nav-item">
 						<a class="nav-link" href="/index.html#Planes">Servicios</a>
 					</li>
-          <li class="nav-item">
-						<a class="nav-link" href="foro.html">Foro</a>
+					<li class="nav-item">
+						<a class="nav-link" href="/foro.html">Foro</a>
 					</li>
 				</ul>
+				<form class="d-flex">
+					<button class="btn btn-outline-light me-2 btn-redondeado" type="submit">
+						Login
+					</button>
+					<button class="btn btn-outline-light btn-redondeado" type="submit">
+						Registro
+					</button>
+				</form>
 			</div>
-		</div>
-	</nav>
+    </div>
+  </nav>
 
 
   <div class="container">
@@ -52,54 +60,55 @@
       <div class="image-box">
         <img src="./assets/img/ajolote1.png" alt="">
       </div>
-    <form action="#" onsubmit="return false">
-      <div class="topic">Contáctanos</div>
-      <div class="input-box">
-        <input type="text" name="firstName" required>
-        <label>Nombre</label>
-      </div>
-      <div class="input-box">
-        <input type="text" name="email" required>
-        <label>Correo electrónico</label>
-      </div>
-      <div class="input-box">
-        <input type="text" name="phone" required>
-        <label>Teléfono </label>
-      </div>
-      <div class="message-box">
-        <textarea name="message"></textarea>
-        <label>Mensaje </label>
-      </div>
-      
-      <div class="input-box">
-        <input type="submit" value="Enviar Mensaje" onclick="sendEmail()">
-      </div>
-    </form>
-  </div>
+      <form action="#" onsubmit="return false">
+        <div class="topic">Contáctanos</div>
+        <div class="input-box">
+          <input type="text" name="firstName" required>
+          <label>Nombre</label>
+        </div>
+        <div class="input-box">
+          <input type="text" name="email" required>
+          <label>Correo electrónico</label>
+        </div>
+        <div class="input-box">
+          <input type="text" name="phone" required>
+          <label>Teléfono </label>
+        </div>
+        <div class="message-box">
+          <textarea name="message"></textarea>
+          <label>Mensaje </label>
+        </div>
+
+        <div class="input-box">
+          <input type="submit" value="Enviar Mensaje" onclick="sendEmail()">
+        </div>
+      </form>
+    </div>
   </div>
 
- 
+
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script>
-    function sendEmail(){
-          Email.send({
-            Host : "smtp.mailtrap.io",
-            Username : "490439c788be8f",
-            Password : "12c3eb7f8e54fd",
-            To : 'creep2monedas@gmail.com',
-            From :document.querySelector('form').elements["email"].value,
-            Subject :document.querySelector('form').elements["firstName"].value,
-            Body :document.querySelector('form').elements["message"].value
-    }).then(
-      message => alert(message)
-    );
-    crear();
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.mailtrap.io",
+        Username: "490439c788be8f",
+        Password: "12c3eb7f8e54fd",
+        To: 'creep2monedas@gmail.com',
+        From: document.querySelector('form').elements["email"].value,
+        Subject: document.querySelector('form').elements["firstName"].value,
+        Body: document.querySelector('form').elements["message"].value
+      }).then(
+        message => alert(message)
+      );
+      crear();
     }
-    function crear(){
-              sessionStorage.setItem("nombre",document.querySelector('form').elements["firstName"].value);
-              sessionStorage.setItem("mail",document.querySelector('form').elements["email"].value);
-              sessionStorage.setItem("phone",document.querySelector('form').elements["phone"].value);
-          }
+    function crear() {
+      sessionStorage.setItem("nombre", document.querySelector('form').elements["firstName"].value);
+      sessionStorage.setItem("mail", document.querySelector('form').elements["email"].value);
+      sessionStorage.setItem("phone", document.querySelector('form').elements["phone"].value);
+    }
   </script>
 </body>
+
 </html>
