@@ -14,6 +14,8 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+	<link href="css/bootstrap2.css" rel="stylesheet" />
+	<link href="css/gaia.css" rel="stylesheet" />
 
 	<title>Creep-ToMonedas | Foro de Criptomonedas</title>
 </head>
@@ -26,7 +28,7 @@
 	<!-- ----- NavBar ----- -->
 	<nav class="navbar navbar-expand-lg p-1">
 		<div class="container-fluid">
-			<img class="me-4" src="./assets/img/ajolote1.png" alt="Logo">
+			<img class="me-4" src="./assets/img/logo.png" alt="Logo">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon d-flex justify-content-start align-items-center">
@@ -45,7 +47,7 @@
 						<a class="nav-link" href="contacto.html">Contacto</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="services.html">Servicios</a>
+						<a class="nav-link" href="/index.html#Planes">Servicios</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/foro.html">Foro</a>
@@ -97,12 +99,12 @@
 					<div class="container ml-1" data-aos="fade-up">
 						<p class="text-sections pt-5 container-fluid h4 panelHidden">
 							<i>Creep-ToMonedas</i> es un proyecto que busca brindar información sobre el mundo de las
-							criptomonedas, enfocado especificamente en el mercado mexicano. <br> <br>
+							criptomonedas, enfocado específicamente en el mercado mexicano. <br> <br>
 							Pensamos en la necesidad de crear una comunidad donde podamos sentirnos en confianza de
 							preguntar y responder sobre el tema que tanto nos apasiona, las criptomonedas. <br><br>
 							Creemos que tomar una decisión es sumamente importante, por lo que buscamos brindar
 							información veraz y actualizada. <br><br>
-							¡Unete a Creep-to y se parte de la familia!
+							¡Únete a Creep-to y se parte de la familia!
 						</p>
 						<div class="row visible">
 							<div class="col-sm">
@@ -131,7 +133,6 @@
 		</div>
 	</section>
 
-	<!-- ----- Services ----- -->
 	<section class="min-vh-100 container-fluid justify-content-center mb-0" id="Planes">
 		<div class="row mt-3">
 			<div class="col-12 p-0">
@@ -139,35 +140,41 @@
 					<h2 class="tittle-sections display-4 mt-4 text-center" data-aos="fade-up">
 						Planes
 					</h2>
-					<div class="container"> <!--Se agrega contenedor para definir espacios-->
+					<!---->
+					<div class="container" data-aos="fade-up">
 						<div class="row">
-						  <div class="col">
-							<div class="membership">
-								<div class="membershipLeft membershipLeftBackground">
-									<br><h2>Premium</h2>
-									<img src="/assets/img/premium.png" height="110px" width="110px">
-								</div>
-								<div class="membershipRight">
-									<h4>¡Quiero ser un experto!</h4>
-									<p>Se un pilar de nuestra comunidad y vuélvete un experto en trading con nuestros análisis detallados, asesorías personalizadas y contenido preferencial.</p>
-					
-									<button class="servicesButton membershipLeftBackground">¡Suscríbete!</button>
-								</div>
-							</div>
-						  </div>
-						  <div class="col">
-							<div class="membership">
-								<div class="membershipLeft membershipLeftBackground">
-									<br><h2>Free</h2>
-									<img src="/assets/img/foro.png" height="110px" width="110px">			
-								</div>
-								<div class="membershipRight">
-									<h4>Estoy dando mis primeros pasos.</h4>
-									<p>Como miembro de esta comunidad puedes ver algunas de nuestras notas y estar en contacto con otros usuarios de nuestros foros.</p>
-									<button class="servicesButton membershipLeftBackground">Regístrate</button>
+							<div class="col">
+								<div class="membership">
+									<div class="membershipLeft membershipLeftBackground">
+										<br>
+										<h2>Premium</h2>
+										<img src="/assets/img/premium.png" height="110px" width="110px">
+									</div>
+									<div class="membershipRight">
+										<h4>¡Quiero ser un experto!</h4>
+										<p>Sé un pilar de nuestra comunidad y vuélvete un experto en trading con
+											nuestros análisis detallados, asesorías personalizadas y contenido
+											preferencial.</p>
+
+										<button class="servicesButton membershipLeftBackground">¡Suscríbete!</button>
+									</div>
 								</div>
 							</div>
-						  </div>
+							<div class="col">
+								<div class="membership">
+									<div class="membershipLeft membershipLeftBackground">
+										<br>
+										<h2>Free</h2>
+										<img src="/assets/img/foro.png" height="110px" width="110px">
+									</div>
+									<div class="membershipRight">
+										<h4>Estoy dando mis primeros pasos.</h4>
+										<p>Como miembro de esta comunidad puedes ver algunas de nuestras notas y estar
+											en contacto con otros usuarios de nuestros foros.</p>
+										<button class="servicesButton membershipLeftBackground">Regístrate</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -187,133 +194,151 @@
 
 					<!---->
 					<!--De aqui-->
-					<div class="container-fluid mt-2" data-aos="fade-up">
-						<div class="card-group">
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/avatar aldair.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Aldair Meraz</h5>
-									<p class="card-text">
-										<b>Backend Developer</b>
-										<br>
-										Una persona colaborativa que gusta del trabajo en equipo, apasionada y dedicada
-										al proyecto cuidando cada detalle. Parte geek, parte musico, con el que da
-										puntos de vista diferentes y creativos.
-									</p>
-								</div>
-							</div>
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Avatar-Joceline.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Joceline Marquez</h5>
-									<p class="card-text">
-										<b>FullStack Developer</b>
-										<br>
-										Desarrolladora involucrada en cada paso del proceso para el desarrollo del
-										proyecto, así puedo aportar mi punto de vista y ayudar a resolver los problemas
-										que se puedan encontrar en el camino y facilitar el trabajo en equipo. Novata
-										enamorada del desarrollo web y de los gatitos (próximamente de las
-										criptomonedas), creciendo y desarrollando habilidades con cada línea de código.
-									</p>
-								</div>
-							</div>
+					<div class="section-our-clients-freebie">
+						<div class="container">
 						</div>
-						<div class="card-group">
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Avatar - Eduardo Castellanos.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Eduardo Garcia</h5>
-									<p class="card-text">
-										<b>Backend Developer</b>
-										<br>
-										Entusiasta de formar parte del equipo de Creep-tomonedas, soy una persona
-										tranquila y seria que disfruta de trabajar con los demás. Enfocado en proponer
-										soluciones y siempre en busca de mantener el orden tanto en el equipo como en
-										las tareas. Disfruto de jugar videojuegos, juegos de mesa y siempre defenderé
-										que Bulbasaur es el mejor inicial.
-									</p>
-								</div>
+						<ul class="nav nav-text text-center align-items-center justify-content-center" role="tablist">
+							<li class="active">
+								<a href="#Aldair" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Aldair.png" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#Angeles" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Angeles.png" />
+									</div>
+								</a>
+							<li>
+								<a href="#Mau" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Mau.png" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#Joss" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Joss.png" />
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="nav nav-text text-center align-items-center justify-content-center" role="tablist">
+							<li class="active">
+								<a href="#Abril" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Abril.png" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#Eduardo" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Eduardo.png" />
+									</div>
+								</a>
+							<li>
+								<a href="#Lili" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Lili.png" />
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#Bernardo" role="tab" data-toggle="tab">
+									<div class="image-clients">
+										<img alt="..." src="assets/img/Bernardo.png" />
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="Aldair">
+								<p class="description">
+									Aldair Meraz<br>
+									Backend Developer<br>
+									Una persona colaborativa que gusta del trabajo en equipo, apasionada y dedicada al
+									proyecto cuidando cada detalle. Parte geek, parte músico, con el que da puntos de
+									vista diferentes y creativos
+								</p>
 							</div>
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Lili-avatar.png" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Liliana Olivares</h5>
-									<p class="card-text">
-										<b>FullStack Developer</b>
-										<br>
-										Procuro poner atención a los pequeños detalles para que los resultados sean de
-										calidad pero también funcionales. Me gusta explorar mi parte creativa, pero
-										también enfrentarme a desafíos en los que tenga que pensar fuera de la caja
-									</p>
-								</div>
+							<div class="tab-pane" id="Angeles">
+								<p class="description">
+									Angeles Rios<br>
+									FullStack Developer<br>
+									Soy una persona curiosa , proactiva que gusta de estar en constante actualización y
+									participar en las diferentes etapas del proceso de desarrollo de software .
+									Aficionada de la musica, la playa y la buena comida.
+								</p>
 							</div>
+							<div class="tab-pane" id="Joss">
+								<p class="description">
+									Joceline Marquez<br>
+									FullStack Developer<br>
+									Desarrolladora involucrada en cada paso del proceso para el desarrollo del proyecto,
+									así puedo aportar mi punto de vista y ayudar a resolver los problemas que se puedan
+									encontrar en el camino y facilitar el trabajo en equipo. Novata enamorada del
+									desarrollo web y de los gatitos (próximamente de las criptomonedas), creciendo y
+									desarrollando habilidades con cada línea de código.
+								</p>
+							</div>
+							<div class="tab-pane" id="Mau">
+								<p class="description">
+									Mauricio Malváez<br>
+									FullStack Developer<br>
+									¡Me encanta trabajar en equipo, los perros y una buena comida! Siempre busco ayudar
+									a los demas y buscar la manera mas eficaz y eficiente de resolver problemas.
+									Aprendiendo sobre las criptomonedas, los ajolotes y el mundo del tradding.
+								</p>
+							</div>
+							<div class="tab-pane" id="Abril">
+								<p class="description">
+									Abril Comparan<br>
+									Backend Developer<br>
+									Impulsa la visión estratégica de Creep-tomonedas, ademas superviso todas las etapas
+									del ciclo creativo y las tareas del equipo. Pensadora estratégica, apasionada por
+									formar equipos y los procesos realmente eficientes.
+								</p>
+							</div>
+							<div class="tab-pane" id="Eduardo">
+								<p class="description">
+									Eduardo Garcia<br>
+									Backend Developer<br>
+									Entusiasta de formar parte del equipo de Creep-tomonedas, soy una persona tranquila
+									y seria que disfruta de trabajar con los demás. Enfocado en proponer soluciones y
+									siempre en busca de mantener el orden tanto en el equipo como en las tareas.
+									Disfruto de jugar videojuegos, juegos de mesa y siempre defenderé que Bulbasaur es
+									el mejor inicial.
+								</p>
+							</div>
+							<div class="tab-pane" id="Lili">
+								<p class="description">
+									Liliana Olivares<br>
+									FullStack Developer<br>
+									Procuro poner atención a los pequeños detalles para que los resultados sean de
+									calidad pero también funcionales. Me gusta explorar mi parte creativa, pero también
+									enfrentarme a desafíos en los que tenga que pensar fuera de la caja
+								</p>
+							</div>
+							<div class="tab-pane" id="Bernardo">
+								<p class="description">
+									Bernardo Pérez<br>
+									Backend Developer<br>
+									Una persona que le gustan los proyectos ambiciosos y dedicada. Parte financiero con
+									Criptomonedas, parte geek, apasionado por Blockchain y otras tecnologías.
+								</p>
+							</div>
+
 						</div>
-						<div class="card-group">
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Avatar_Abril.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Abril Comparan</h5>
-									<p class="card-text">
-										<b>Backend Developer</b>
-										<br>
-										Impulsa la visión estratégica de Creep-tomonedas, ademas superviso todas las
-										etapas del ciclo creativo y las tareas del equipo. Pensadora estratégica,
-										apasionada por formar equipos y los procesos realmente eficientes.
-									</p>
-								</div>
-							</div>
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Avatar Angeles.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Angeles Rios</h5>
-									<p class="card-text">
-										<b>FullStack Developer</b>
-										<br>
-										Soy una persona curiosa , proactiva que gusta de estar en constante
-										actualización y participar en las diferentes etapas del proceso de desarrollo de
-										software . Aficionada de la musica, la playa y la buena comida.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="card-group">
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Stuck at Home - Avatar.png"
-									alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Mauricio Malváez</h5>
-									<p class="card-text">
-										<b>FullStack Developer </b>
-										<br>
-										Me encanta trabajar en equipo, los perros y una buena comida! Siempre busco
-										ayudar a los demas y buscar la manera mas eficaz y eficiente de resolver
-										problemas. Aprendiendo sobre las criptomonedas, los ajolotes y el mundo del
-										tradding.
-									</p>
-								</div>
-							</div>
-							<div class="card align-items-center">
-								<img class="img-fluid perfiles" src="./assets/img/Berna.png" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title text-center">Bernardo Pérez</h5>
-									<p class="card-text">
-										<b>Backend Developer</b>
-										<br>
-										Una persona que le gustan los proyectos ambiciosos y dedicada. Parte financiero
-										con Criptomonedas, parte geek, apasionado por Blockchain y otras tecnologias.
-									</p>
-								</div>
-							</div>
-						</div>
+
 					</div>
-					<!--Hasta aca-->
 				</div>
+				<!--Hasta aca-->
 			</div>
+		</div>
 		</div>
 	</section>
 	<!------------------Footer    ------------------>
@@ -379,6 +404,9 @@
 	<script>
 		AOS.init();
 	</script>
+	<!--   core js files    -->
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
 </body>
 
 </html>
