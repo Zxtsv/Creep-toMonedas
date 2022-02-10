@@ -274,7 +274,17 @@ a:hover{
     letter-spacing: .1rem;
     align-self: flex-end;
   }
-  
+
+/* ----- Carousel size ----- */
+  .carousel img {
+    max-height: 500px;
+    margin: 0 auto;
+    }
+    
+  .carousel-section {
+    margin: 5%;
+  }
+
 .btn-redondeado{
   border-radius: 30px;
 }
